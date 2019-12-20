@@ -1,0 +1,10 @@
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\bin\Debug\Asm2.exe.config
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\bin\Debug\Asm2.exe
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\bin\Debug\Asm2.pdb
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\obj\Debug\Asm2.csprojAssemblyReference.cache
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\obj\Debug\Asm2.Form1.resources
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\obj\Debug\Asm2.Properties.Resources.resources
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\obj\Debug\Asm2.csproj.GenerateResource.cache
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\obj\Debug\Asm2.exe
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\obj\Debug\Asm2.pdb
+C:\Users\mrbjn\OneDrive\Máy tính\Asm2\obj\Debug\Asm2.Form2.resources
