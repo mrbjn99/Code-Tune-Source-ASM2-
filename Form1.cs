@@ -72,5 +72,73 @@ namespace Asm2
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.LightPink;
+            string msg = "";
+            msg = msg + "Background color Form:" + this.BackColor.ToString() + "\n";
+            msg = msg + " Button click:" + label1.Text;
+            Text = msg;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.LightYellow;
+            string msg = "";
+            msg = msg + "Background color Form:" + this.BackColor.ToString() + "\n";
+            msg = msg + " Button click:" + label1.Text;
+            Text = msg;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

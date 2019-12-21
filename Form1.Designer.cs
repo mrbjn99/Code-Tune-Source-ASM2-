@@ -43,8 +43,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -54,6 +52,8 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -122,15 +122,17 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Home";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(269, 24);
+            this.button3.Location = new System.Drawing.Point(270, 24);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(78, 23);
             this.button3.TabIndex = 6;
             this.button3.Text = "About";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -140,6 +142,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Services";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -149,6 +152,7 @@
             this.button5.TabIndex = 8;
             this.button5.Text = "Works";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -158,6 +162,7 @@
             this.button6.TabIndex = 9;
             this.button6.Text = "News";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -167,6 +172,7 @@
             this.button7.TabIndex = 10;
             this.button7.Text = "Contact";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -186,6 +192,7 @@
             this.button9.TabIndex = 12;
             this.button9.Text = "Categories";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // vScrollBar1
             // 
@@ -195,29 +202,6 @@
             this.vScrollBar1.TabIndex = 13;
             this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(341, 348);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 31);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.Text = "Popular genres";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(316, 394);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(255, 24);
-            this.textBox4.TabIndex = 15;
-            this.textBox4.Text = "Start your music journey !";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
@@ -226,6 +210,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(185, 194);
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
@@ -236,6 +221,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(188, 194);
             this.pictureBox4.TabIndex = 17;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -257,6 +243,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(175, 194);
             this.pictureBox6.TabIndex = 19;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // textBox5
             // 
@@ -311,12 +298,36 @@
             this.textBox15.Size = new System.Drawing.Size(246, 20);
             this.textBox15.TabIndex = 32;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(333, 358);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 33);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Popular genres";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(309, 400);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(280, 29);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Start your music journey !";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(879, 906);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -326,8 +337,6 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -371,8 +380,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -382,6 +389,8 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
